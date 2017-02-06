@@ -1,0 +1,19 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "Template project for react applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiere/react-starter.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiere/react-starter/issues"
+  },
+  "homepage": "https://github.com/tiere/react-starter#readme"
+}
