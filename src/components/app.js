@@ -1,6 +1,11 @@
+import ExampleForm from "../containers/example-form";
 import React from "react";
 
 const App = (props) =>
-  <h1>React Starter</h1>;
+  <div className="app">
+    <h1>React Starter</h1>
+
+    <ExampleForm />
+  </div>;
 
 export default App;
