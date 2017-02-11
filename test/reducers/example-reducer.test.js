@@ -9,5 +9,8 @@ describe("exampleReducer", () => {
   test ("when action type is EXAMPLE_ACTION", () => {
     expect(exampleReducer(undefined, {type: actionTypes.EXAMPLE_ACTION, text: "Testing"}))
       .toEqual({example: "Testing"});
+
+    expect(exampleReducer({example: "Prior text"}, {type: actionTypes.EXAMPLE_ACTION, text: "Testing"}))
+      .toEqual({example: "Testing"});
   });
 });
