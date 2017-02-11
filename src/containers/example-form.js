@@ -2,7 +2,7 @@ import * as actions from "../actions";
 import React, {PropTypes} from "react";
 import {connect} from "react-redux";
 
-class ExampleForm extends React.Component {
+export class ExampleForm extends React.Component {
   constructor(props) {
     super(props);
 
@@ -14,8 +14,8 @@ class ExampleForm extends React.Component {
   render() {
     return (
       <form onSubmit={this._handleSubmit.bind(this)}>
-        <div>Local state: {JSON.stringify(this.state)}</div>
-        <div>Global state: {JSON.stringify(this.props.state)}</div>
+        <div id="localState">Local state: {JSON.stringify(this.state)}</div>
+        <div id="globalState">Global state: {JSON.stringify(this.props.state)}</div>
 
         <input type="text"
                value={this.state.exampleField}
